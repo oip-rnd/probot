@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "rimraf lib && tsc -p tsconfig.json",
-    "start": "node ./bin/probot run",
+    "start": "node ./bin/probot.js run",
     "lint": "tslint --project test",
     "test": "tsc --noEmit -p test && jest --coverage && npm run lint && npm run doc-lint",
     "doc-lint": "standard-markdown docs/",
